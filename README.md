@@ -9,7 +9,7 @@ The basic application is licensed unde rthe Apache License, Version 2.0. IMPORTA
 
   We did slight modifications within this library.
   
-* OpenCV 3.2
+* OpenCV 3.2 (ADAPT THE BUILD PATH IN Android.mk)
 
   We used openCv for image processing.
 
