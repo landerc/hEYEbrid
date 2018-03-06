@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\item_picker.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\item_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_camera.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\src\\main\\res\\layout\\dialog_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_device.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\src\\main\\res\\layout\\listitem_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_bluetooth_device_info.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\list_item_bluetooth_device_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\color_picker.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\color_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\color_picker_dialog.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\color_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\view_frame_selector.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\view_frame_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\color_picker_dialog.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\color_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\view_frame_selector.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\view_frame_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\listitem_device.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\src\\main\\res\\layout\\listitem_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_camera.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\src\\main\\res\\layout\\dialog_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\item_picker.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\item_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_bluetooth_device_info.xml",
+        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\list_item_bluetooth_device_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\layout\\color_picker.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\layout\\color_picker.xml"
+    }
+]

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/control_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+
+        <de.morrox.fontinator.FontTextView
+            android:id="@+id/control_lbl_static"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="0.6"
+            android:text="hEYEbrid Control"
+            android:textColor="?attr/colorAccent"
+            android:textSize="35sp"
+            app:font="UnicaOne-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/usbIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_usb_disconneted" />
+
+
+        <ImageView
+            android:id="@+id/streamingIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_import_export_off" />
+
+        <ImageView
+            android:id="@+id/gazeIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_gaze_off" />
+
+        <ImageButton
+            android:id="@+id/expandControlBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more_accent" />
+
+    </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:el_duration="300"
+        app:el_expanded="true"
+        app:el_parallax="0.5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Record all streams"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/recordAllSwitch"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/lbl"
+                    android:checked="false"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold" />
+
+                <Chronometer
+                    android:id="@+id/chronoMeter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:format="Time: %s"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16dp" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/recording_text"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chronoMeter"
+                    android:layout_marginTop="12dp"
+                    android:text="Switches on the recording (raw video streams + timestamps and tracking data if enabled). The recorded files can be used with Pupil Labs Player. You might turn off the screen."
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <View
+                    android:id="@+id/sep00"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/recording_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/stream_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep00"
+                    android:layout_marginTop="12dp"
+                    android:text="Activate Logging"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/checkLogging"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep00"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@id/stream_lbl"
+                    android:buttonTint="@color/colorPrimaryLight"
+                    android:checked="false"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/stream_textg"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/stream_lbl"
+                    android:layout_marginTop="12dp"
+                    android:text="Images will be streamed and are sent to a server to extract information. Please have a look at your account on www.xyz.org to see your visual diary."
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <View
+                    android:id="@+id/sep"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/stream_textg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/tracking_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep"
+                    android:layout_marginTop="12dp"
+                    android:text="Toggle Tracking"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/checkTracking"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@id/tracking_lbl"
+                    android:buttonTint="@color/colorPrimaryLight"
+                    android:checked="false"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/tracking_text"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tracking_lbl"
+                    android:layout_marginTop="12dp"
+                    android:text="This enables the automatic cropping of the corneal images according to your pupil position."
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <View
+                    android:id="@+id/sep0"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/tracking_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <!--
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/gaze_lbl"
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@id/sep0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaze Estimation on Screens"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/checkGaze"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="60dp"
+                    android:layout_below="@id/sep0"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/gaze_lbl"
+                    android:checked="false"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold"
+                    android:buttonTint="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/gaze_info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gaze_lbl"
+                    android:layout_marginTop="6dp"
+                    android:text="normalized coordaintes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/gaze_coords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/gaze_lbl"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@id/gaze_info1"
+                    android:text="none"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <View
+                    android:id="@+id/sep1"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/gaze_coords"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/att_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep1"
+                    android:layout_marginTop="12dp"
+                    android:text="Attention Measuring"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/checkAtt"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sep1"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@id/att_lbl"
+                    android:checked="false"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal|bold"
+                    android:buttonTint="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/att_info_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/att_lbl"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Attended Objects:"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/att_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/att_lbl"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@id/att_info_lbl"
+                    android:text="-"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    app:font="Abel-Regular.ttf" />-->
+
+            </RelativeLayout>
+
+        </ScrollView>
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/scene_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <de.morrox.fontinator.FontTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="0.6"
+            android:text="Corneal View"
+            android:textColor="?attr/colorAccent"
+            android:textSize="35sp"
+            app:font="UnicaOne-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/sceneCamIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cam_off" />
+
+        <ImageView
+            android:id="@+id/sceneRecordIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_record_off" />
+
+        <ImageButton
+            android:id="@+id/expandSceneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more_accent" />
+
+    </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout_scene"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:el_duration="300"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp">
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/switchlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle Camera Stream"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/sceneSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_toEndOf="@id/switchlbl"
+                    android:buttonTint="@color/colorPrimaryLight"
+                    android:checked="false" />
+
+                <View
+                    android:id="@+id/sepCorneal"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/switchlbl"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/scene_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sepCorneal"
+                    android:layout_marginTop="6dp"
+                    android:text="Camera Stream"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <com.serenegiant.widget.UVCCameraTextureView
+                    android:id="@+id/camera_view_scene"
+                    android:layout_width="160sp"
+                    android:layout_height="120sp"
+                    android:layout_below="@id/scene_lbl"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/btnCaptureCorneal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/camera_view_scene"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@color/TRANSPARENT"
+                    android:drawableStart="@drawable/ic_photo" />
+
+                <View
+                    android:id="@+id/sepCorneal1"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/camera_view_scene"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/mapPupilLbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sepCorneal1"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Cropped Pupil"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <ImageView
+                    android:id="@+id/imgBuffer2"
+                    android:layout_width="160sp"
+                    android:layout_height="120sp"
+                    android:layout_below="@id/mapPupilLbl"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/eye_header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <de.morrox.fontinator.FontTextView
+            android:id="@+id/eye_lbl_static"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_weight="0.6"
+            android:text="IR View"
+            android:textColor="?attr/colorAccent"
+            android:textSize="35sp"
+            app:font="UnicaOne-Regular.ttf" />
+
+        <ImageView
+            android:id="@+id/eyeCamIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_cam_off" />
+
+        <ImageView
+            android:id="@+id/eyeRecordIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_record_off" />
+
+        <ImageButton
+            android:id="@+id/expandEyeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more_accent" />
+
+    </LinearLayout>
+
+    <net.cachapa.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_layout_eye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:el_duration="300"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/switchlblIR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Toggle Camera Stream"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="UnicaOne-Regular.ttf" />
+
+                <Switch
+                    android:id="@+id/eyeSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_toEndOf="@id/switchlblIR"
+                    android:checked="false" />
+
+                <View
+                    android:id="@+id/sepIR"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/switchlblIR"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/ir_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sepIR"
+                    android:layout_marginTop="6dp"
+                    android:text="Camera"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <com.serenegiant.widget.UVCCameraTextureView
+                    android:id="@+id/camera_view_eye"
+                    android:layout_width="160sp"
+                    android:layout_height="120sp"
+                    android:layout_below="@id/ir_lbl"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/btnCaptureIR"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/camera_view_eye"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@color/TRANSPARENT"
+                    android:drawableStart="@drawable/ic_photo" />
+
+                <View
+                    android:id="@+id/sepIR1"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/camera_view_eye"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/pupilLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sepIR1"
+                    android:layout_marginTop="6dp"
+                    android:text="Pupil Tracking"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <ImageView
+                    android:id="@+id/imgBuffer"
+                    android:layout_width="160sp"
+                    android:layout_height="120sp"
+                    android:layout_below="@id/pupilLbl"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </net.cachapa.expandablelayout.ExpandableLayout>
+
+</LinearLayout>

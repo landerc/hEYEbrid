@@ -1,0 +1,15 @@
+int attr font 0x7f010000
+int attr html 0x7f010003
+int attr letterSpace 0x7f010001
+int attr textTransform 0x7f010002
+int drawable ic_launcher 0x7f020000
+int id lowercase 0x7f040000
+int id none 0x7f040001
+int id uppercase 0x7f040002
+int style AppBaseTheme 0x7f030000
+int style AppTheme 0x7f030001
+int[] styleable Typefaceable { 0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003 }
+int styleable Typefaceable_font 0
+int styleable Typefaceable_html 3
+int styleable Typefaceable_letterSpace 1
+int styleable Typefaceable_textTransform 2

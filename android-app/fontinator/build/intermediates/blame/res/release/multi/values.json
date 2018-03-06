@@ -1,0 +1,49 @@
+[
+    {
+        "outputFile": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\fontinator\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 410,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 696
+                },
+                "from": {
+                    "file": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\fontinator\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 701,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 856
+                },
+                "from": {
+                    "file": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\fontinator\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 682
+                    }
+                }
+            }
+        ]
+    }
+]

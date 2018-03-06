@@ -1,0 +1,1 @@
+include ':app', ':fontinator', ':eyemirror', ':libuvccamera', ':openCVLibrary320', ':usbCameraCommon'
