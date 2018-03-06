@@ -2,7 +2,7 @@
 
 ## hEYEbrid Android App
 Android application to use the head-mounted device as described in (https://dl.acm.org/citation.cfm?id=3161166&dl=ACM&coll=DL).
-The basic application is licensed unde rthe Apache License, Version 2.0.
+The basic application is licensed unde rthe Apache License, Version 2.0. IMPORTANT: The app is based on Gradle 2.2.3 (we recommend not to update anything concerning gradle and build tools, as this might lead to build errors)
 
 ##### The application has several dependencises:
 * UVCCamera (https://github.com/saki4510t/UVCCamera) used to connect USB cameras
