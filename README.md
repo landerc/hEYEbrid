@@ -21,6 +21,8 @@ The basic application is licensed unde rthe Apache License, Version 2.0.
 
 * WheelView (https://github.com/BlackBoxVision/material-wheel-view)
 
+* ELse for eye tracking (http://www.ti.uni-tuebingen.de/uploads/tx_timitarbeiter/ElSe.pdf)
+
 ## Hardware
 The head-mounted device is based on Pupil Lab's eye tracking device. We used the glasses frame and removed the cameras.
 We printed our own camera enclosure to mount two cameras in front of the eye. The model can be found in the folder hardware. We printed the mount using a FormLabs 3D pribnter.
