@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         app:el_duration="300"
-        app:el_expanded="true"
+        app:el_expanded="false"
         app:el_parallax="0.5">
         <ScrollView
             android:layout_width="match_parent"
@@ -453,7 +453,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         app:el_duration="300"
-        app:el_expanded="false"
+        app:el_expanded="true"
         app:el_parallax="0.5">
 
         <RelativeLayout
@@ -463,36 +463,53 @@
             android:layout_marginStart="16dp">
 
             <de.morrox.fontinator.FontTextView
-                android:id="@+id/scene_lbl"
-                android:layout_width="match_parent"
+                android:id="@+id/switchlbl"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="None"
+                android:text="Toggle Camera Stream"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:font="UnicaOne-Regular.ttf" />
 
+            <Switch
+                android:id="@+id/sceneSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="-2dp"
+                android:layout_toEndOf="@id/switchlbl"
+                android:checked="false"
+                android:buttonTint="@color/colorPrimaryLight" />
+
+            <View
+                android:id="@+id/sepCorneal"
+                android:layout_width="260dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/switchlbl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@color/colorPrimaryLight" />
+
+            <de.morrox.fontinator.FontTextView
+                android:id="@+id/scene_lbl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sepCorneal"
+                android:layout_marginTop="6dp"
+                android:text="Camera Stream"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:font="Abel-Regular.ttf" />
+
             <com.serenegiant.widget.UVCCameraTextureView
-                android:id="@+id/camera_view_scene"
+                android:id="@+id/camera_view_scene_pupil"
                 android:layout_width="160dp"
                 android:layout_height="120dp"
                 android:layout_below="@id/scene_lbl"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="6dp" />
 
-            <Switch
-                android:id="@+id/sceneSwitch"
-                android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/scene_lbl"
-                android:layout_marginStart="40dp"
-                android:layout_toEndOf="@id/camera_view_scene"
-                android:checked="false"
-                android:fontFamily="sans-serif"
-                android:text="scene stream"
-                android:textStyle="normal|bold"
-                android:buttonTint="@color/colorPrimaryLight" />
-
+            <!--
             <Switch
                 android:id="@+id/sceneRecordSwitch"
                 android:layout_width="160dp"
@@ -505,6 +522,7 @@
                 android:fontFamily="sans-serif"
                 android:text="scene record"
                 android:textStyle="bold" />
+                -->
         </RelativeLayout>
 
     </net.cachapa.expandablelayout.ExpandableLayout>
@@ -580,30 +598,48 @@
                     android:id="@+id/ir_lbl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="IR"
+                    android:text="Toggle Camera Stream"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     app:font="UnicaOne-Regular.ttf" />
 
-                <com.serenegiant.widget.UVCCameraTextureView
-                    android:id="@+id/camera_view_ir"
-                    android:layout_width="160dp"
-                    android:layout_height="120dp"
-                    android:layout_below="@id/ir_lbl"
-                    android:layout_marginTop="6dp" />
-
                 <Switch
                     android:id="@+id/irSwitch"
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/ir_lbl"
-                    android:layout_toEndOf="@id/camera_view_ir"
-                    android:layout_marginStart="2dp"
-                    android:checked="false"
-                    android:fontFamily="sans-serif"
-                    android:text="ir stream"
-                    android:textStyle="normal|bold" />
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_toEndOf="@id/ir_lbl"
+                    android:checked="false" />
 
+                <View
+                    android:id="@+id/sepIR"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/irSwitch"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/ir_lbl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sepIR"
+                    android:layout_marginTop="6dp"
+                    android:text="Camera"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <com.serenegiant.widget.UVCCameraTextureView
+                    android:id="@+id/camera_view_ir_pupil"
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/ir_lbl2"
+                    android:layout_marginTop="6dp"/>
+
+                <!--
                 <Switch
                     android:id="@+id/irRecordSwitch"
                     android:layout_width="120dp"
@@ -614,7 +650,35 @@
                     android:checked="false"
                     android:fontFamily="sans-serif"
                     android:text="ir record"
-                    android:textStyle="bold" />
+                    android:textStyle="bold" />-->
+
+                <View
+                    android:id="@+id/sepIR1"
+                    android:layout_width="260dp"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/camera_view_ir_pupil"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/colorPrimaryLight" />
+
+                <de.morrox.fontinator.FontTextView
+                    android:id="@+id/pupilLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sepIR1"
+                    android:layout_marginTop="6dp"
+                    android:text="Pupil Tracking"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    app:font="Abel-Regular.ttf" />
+
+                <ImageView
+                    android:id="@+id/imgBuffer"
+                    android:layout_width="160sp"
+                    android:layout_height="120sp"
+                    android:layout_below="@id/pupilLbl"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="6dp" />
 
             </RelativeLayout>
         </ScrollView>

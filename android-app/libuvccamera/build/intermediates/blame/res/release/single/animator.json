@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_right_out.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_right_out.xml"
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_right_out.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_right_out.xml"
     },
     {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_left_in.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_left_in.xml"
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_left_out.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_left_out.xml"
     },
     {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_right_in.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_right_in.xml"
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_left_in.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_left_in.xml"
     },
     {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_left_out.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_left_out.xml"
+        "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\release\\animator\\card_flip_right_in.xml",
+        "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\animator\\card_flip_right_in.xml"
     }
 ]

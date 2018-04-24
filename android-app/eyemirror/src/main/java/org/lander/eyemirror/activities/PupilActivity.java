@@ -81,7 +81,8 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
     private CameraViewInterface mIRCameraView;
     private ImageButton expandEye;
     private ImageView mEyeCamIndicator, mEyeRecordIndicator;
-    private Switch mIRRecordSwitch, mIRSwitch;
+    private Switch  mIRSwitch;
+    private ImageView imgBufferIR;
 
     /**
      * native interface to access C methods
@@ -94,7 +95,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
     private CameraViewInterface mSceneCameraView;
     private ImageButton expandScene;
     private ImageView mSceneCamIndicator, mSceneRecordIndicator;
-    private Switch mSceneSwitch, mSceneRecordSwitch;
+    private Switch mSceneSwitch;
 
     /* control components*/
     private ExpandableLayout mControlExpand;
@@ -182,7 +183,9 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                 }
             }
 
-            mNativeInterface.setScene(new ImageData(null, ts));
+            frame.clear();
+            mBitmap_Scene.copyPixelsFromBuffer(frame);
+            mNativeInterface.setScene(new ImageData(mBitmap_Scene, ts));
         }
 
     };
@@ -407,6 +410,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
 
 
         /*** eye view start ***/
+        imgBufferIR = (ImageView) findViewById(R.id.imgBuffer);
         mEyeExpand = (ExpandableLayout) findViewById(R.id.expandable_layout_eye);
         mEyeCamIndicator = (ImageView) findViewById(R.id.eyeCamIndicator);
         mEyeRecordIndicator = (ImageView) findViewById(R.id.eyeRecordIndicator);
@@ -415,7 +419,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    mDialogOnView = R.id.camera_view_ir;
+                    mDialogOnView = R.id.camera_view_ir_pupil;
                     if (mIRHandler != null) {
                         if (!mIRHandler.isOpened() && !mIRHandler.isPreviewing()) {
                             CameraDialog.showDialog(PupilActivity.this);
@@ -431,7 +435,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                 }
             }
         });
-
+/*
         mIRRecordSwitch = (Switch) findViewById(R.id.irRecordSwitch);
         mIRRecordSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -439,7 +443,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                 //TODO implement
             }
         });
-
+*/
 
         expandEye = (ImageButton) findViewById(R.id.expandEyeBtn);
         expandEye.setOnClickListener(new View.OnClickListener() {
@@ -459,7 +463,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
             }
         });
 
-        mIRCameraView = (CameraViewInterface) findViewById(R.id.camera_view_ir);
+        mIRCameraView = (CameraViewInterface) findViewById(R.id.camera_view_ir_pupil);
         mIRCameraView.setAspectRatio(IR_WIDTH / (float) IR_HEIGHT);
         //((UVCCameraTextureView)mIRCameraView).setOnClickListener(mOnClickListener);
         mIRHandler = UVCCameraHandler.createHandler(this, mIRCameraView, 1, IR_WIDTH, IR_HEIGHT, UVCCamera.FRAME_FORMAT_MJPEG, BANDWIDTH_FACTORS[0], mIRFrameCallback);
@@ -474,7 +478,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    mDialogOnView = R.id.camera_view_scene;
+                    mDialogOnView = R.id.camera_view_scene_pupil;
                     if (mSceneHandler != null) {
                         if (!mSceneHandler.isOpened()) {
                             CameraDialog.showDialog(PupilActivity.this);
@@ -490,6 +494,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                 }
             }
         });
+        /*
         mSceneRecordSwitch = (Switch) findViewById(R.id.sceneRecordSwitch);
         mSceneRecordSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -504,7 +509,7 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                     mSceneRecordIndicator.setImageResource(R.drawable.ic_record_off);
                 }
             }
-        });
+        });*/
         mSceneLabel = (FontTextView) findViewById(R.id.scene_lbl);
 
         expandScene = (ImageButton) findViewById(R.id.expandSceneBtn);
@@ -525,8 +530,8 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
             }
         });
 
-        mSceneCameraView = (CameraViewInterface) findViewById(R.id.camera_view_scene);
-        mSceneCameraView.setAspectRatio(UVCCamera.DEFAULT_PREVIEW_WIDTH / (float) UVCCamera.DEFAULT_PREVIEW_HEIGHT);
+        mSceneCameraView = (CameraViewInterface) findViewById(R.id.camera_view_scene_pupil);
+        mSceneCameraView.setAspectRatio(SCENE_WIDTH / (float) SCENE_HEIGHT);
         // ((UVCCameraTextureView)mSceneCameraView).setOnClickListener(mOnClickListener);
         mSceneHandler = UVCCameraHandler.createHandler(this, mSceneCameraView, 1, SCENE_WIDTH, SCENE_HEIGHT, UVCCamera.FRAME_FORMAT_MJPEG, BANDWIDTH_FACTORS[1], mSceneFrameCallback);
         /*** eye view end ***/
@@ -723,12 +728,12 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
 
         @Override
         public void onConnect(final UsbDevice device, final USBMonitor.UsbControlBlock ctrlBlock, final boolean createNew) {
-            if (mDialogOnView == R.id.camera_view_scene && !mSceneHandler.isOpened()) {
+            if (mDialogOnView == R.id.camera_view_scene_pupil && !mSceneHandler.isOpened()) {
                 mSceneHandler.open(ctrlBlock);
                 final SurfaceTexture st = mSceneCameraView.getSurfaceTexture();
                 mSceneHandler.startPreview(new Surface(st));
                 mSceneHandler.startGrabbing(); //TODO: FIXME
-            } else if (mDialogOnView == R.id.camera_view_ir && !mIRHandler.isOpened()) {
+            } else if (mDialogOnView == R.id.camera_view_ir_pupil && !mIRHandler.isOpened()) {
                 mIRHandler.open(ctrlBlock);
                 final SurfaceTexture st = mIRCameraView.getSurfaceTexture();
                 mIRHandler.startPreview(new Surface(st));
@@ -795,8 +800,8 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
         @Override
         public void onClick(final View view) {
             switch (view.getId()) {
-                case R.id.camera_view_scene:
-                    mDialogOnView = R.id.camera_view_scene;
+                case R.id.camera_view_scene_pupil:
+                    mDialogOnView = R.id.camera_view_scene_pupil;
                     if (mSceneHandler != null) {
                         if (!mSceneHandler.isOpened()) {
                             CameraDialog.showDialog(PupilActivity.this);
@@ -806,8 +811,8 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                         }
                     }
                     break;
-                case R.id.camera_view_ir:
-                    mDialogOnView = R.id.camera_view_ir;
+                case R.id.camera_view_ir_pupil:
+                    mDialogOnView = R.id.camera_view_ir_pupil;
                     if (mIRHandler != null) {
                         if (!mIRHandler.isOpened()) {
                             CameraDialog.showDialog(PupilActivity.this);
@@ -866,12 +871,12 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
                 if (information[1] != null && information[1].equals("73BA28D0")) {
                     name = "Logitech Webcam C270";
                 }
-                if (viewID == R.id.camera_view_scene && (mSceneHandler != null) && !mSceneHandler.isOpened()) {
+                if (viewID == R.id.camera_view_scene_pupil && (mSceneHandler != null) && !mSceneHandler.isOpened()) {
                     mSceneLabel.setText(name);
                     mSceneCamIndicator.setImageResource(R.drawable.ic_cam_on);
                     mSceneSwitch.setChecked(true);
                 }
-                if (viewID == R.id.camera_view_ir && (mIRHandler != null) && !mIRHandler.isOpened()) {
+                if (viewID == R.id.camera_view_ir_pupil && (mIRHandler != null) && !mIRHandler.isOpened()) {
                     mEyeCamIndicator.setImageResource(R.drawable.ic_cam_on);
                     mIRSwitch.setChecked(true);
                 }
@@ -907,13 +912,24 @@ public class PupilActivity extends BaseActivity implements CameraDialog.CameraDi
 
 
     @Override
-    public void onHybridEyeTracked(Bitmap ir, Bitmap corneal, DataFrame df) {
+    public void onHybridEyeTracked(final Bitmap ir, Bitmap corneal, DataFrame df) {
         //write pupil data info
         synchronized (synchRecordingData) {
             if (mRecordData) {
                 mRecordingHelper.update(df);
             }
         }
+
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (ir != null) {
+                    imgBufferIR.setImageBitmap(ir);
+                }
+            }
+        }, 0);
+
+        //TODO: here you get infromation about tracked pupil
     }
 
     @Override

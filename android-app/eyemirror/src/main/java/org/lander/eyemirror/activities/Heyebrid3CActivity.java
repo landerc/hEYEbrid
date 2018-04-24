@@ -448,7 +448,7 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    mDialogOnView = R.id.camera_view_ir;
+                    mDialogOnView = R.id.camera_view_ir_3c;
                     if (mIRHandler != null) {
                         if (!mIRHandler.isOpened() && !mIRHandler.isPreviewing()) {
                             CameraDialog.showDialog(Heyebrid3CActivity.this);
@@ -502,12 +502,12 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
             }
         });
 
-        mCornealCamerView = (CameraViewInterface) findViewById(R.id.camera_view_eye);
+        mCornealCamerView = (CameraViewInterface) findViewById(R.id.camera_view_eye_3c);
         mCornealCamerView.setAspectRatio(CORNEAL_WIDTH / (float) CORNEAL_HEIGHT);
         //((UVCCameraTextureView)mCornealCamerView).setOnClickListener(mOnClickListener);
         mCornealHandler = UVCCameraHandler.createHandler(this, mCornealCamerView, 1, CORNEAL_WIDTH, CORNEAL_HEIGHT, UVCCamera.FRAME_FORMAT_MJPEG, BANDWIDTH_FACTORS[0], mEyeFrameCallback);
 
-        mIRCameraView = (CameraViewInterface) findViewById(R.id.camera_view_ir);
+        mIRCameraView = (CameraViewInterface) findViewById(R.id.camera_view_ir_3c);
         mIRCameraView.setAspectRatio(IR_WIDTH / (float) IR_HEIGHT);
         //((UVCCameraTextureView)mIRCameraView).setOnClickListener(mOnClickListener);
         mIRHandler = UVCCameraHandler.createHandler(this, mIRCameraView, 1, IR_WIDTH, IR_HEIGHT, UVCCamera.FRAME_FORMAT_MJPEG, BANDWIDTH_FACTORS[1], mIRFrameCallback);
@@ -522,7 +522,7 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
-                    mDialogOnView = R.id.camera_view_scene;
+                    mDialogOnView = R.id.camera_view_scene_3c;
                     if (mSceneHandler != null) {
                         if (!mSceneHandler.isOpened()) {
                             CameraDialog.showDialog(Heyebrid3CActivity.this);
@@ -573,7 +573,7 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
             }
         });
 
-        mSceneCameraView = (CameraViewInterface) findViewById(R.id.camera_view_scene);
+        mSceneCameraView = (CameraViewInterface) findViewById(R.id.camera_view_scene_3c);
         mSceneCameraView.setAspectRatio(UVCCamera.DEFAULT_PREVIEW_WIDTH / (float)UVCCamera.DEFAULT_PREVIEW_HEIGHT);
        // ((UVCCameraTextureView)mSceneCameraView).setOnClickListener(mOnClickListener);
         mSceneHandler = UVCCameraHandler.createHandler(this, mSceneCameraView,1,  SCENE_WIDTH, SCENE_HEIGHT, UVCCamera.FRAME_FORMAT_MJPEG, BANDWIDTH_FACTORS[2], mSceneFrameCallback);
@@ -783,18 +783,18 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
 
         @Override
         public void onConnect(final UsbDevice device, final USBMonitor.UsbControlBlock ctrlBlock, final boolean createNew) {
-            if (mDialogOnView == R.id.camera_view_scene && !mSceneHandler.isOpened()) {
+            if (mDialogOnView == R.id.camera_view_scene_3c && !mSceneHandler.isOpened()) {
                 mSceneHandler.open(ctrlBlock);
                 final SurfaceTexture st = mSceneCameraView.getSurfaceTexture();
                 mSceneHandler.startPreview(new Surface(st));
                 //mSceneHandler.startGrabbing(); //TODO: FIXME
-            } else if (mDialogOnView == R.id.camera_view_eye && !mCornealHandler.isOpened()) {
+            } else if (mDialogOnView == R.id.camera_view_eye_3c && !mCornealHandler.isOpened()) {
                 mCornealHandler.open(ctrlBlock);
                 final SurfaceTexture st = mCornealCamerView.getSurfaceTexture();
                 mCornealHandler.startPreview(new Surface(st));
                 //start grabbing
                 //mCornealHandler.startGrabbing(); //TODO: FIXME
-            } else if (mDialogOnView == R.id.camera_view_ir && !mIRHandler.isOpened()) {
+            } else if (mDialogOnView == R.id.camera_view_ir_3c && !mIRHandler.isOpened()) {
                 mIRHandler.open(ctrlBlock);
                 final SurfaceTexture st = mIRCameraView.getSurfaceTexture();
                 mIRHandler.startPreview(new Surface(st));
@@ -875,8 +875,8 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
         @Override
         public void onClick(final View view) {
             switch (view.getId()) {
-                case R.id.camera_view_scene:
-                    mDialogOnView = R.id.camera_view_scene;
+                case R.id.camera_view_scene_3c:
+                    mDialogOnView = R.id.camera_view_scene_3c;
                     if (mSceneHandler != null) {
                         if (!mSceneHandler.isOpened()) {
                             CameraDialog.showDialog(Heyebrid3CActivity.this);
@@ -886,8 +886,8 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
                         }
                     }
                     break;
-                case R.id.camera_view_eye:
-                    mDialogOnView = R.id.camera_view_eye;
+                case R.id.camera_view_eye_3c:
+                    mDialogOnView = R.id.camera_view_eye_3c;
                     if (mCornealHandler != null) {
                         if (!mCornealHandler.isOpened()) {
                             CameraDialog.showDialog(Heyebrid3CActivity.this);
@@ -897,8 +897,8 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
                         }
                     }
                     break;
-                case R.id.camera_view_ir:
-                    mDialogOnView = R.id.camera_view_ir;
+                case R.id.camera_view_ir_3c:
+                    mDialogOnView = R.id.camera_view_ir_3c;
                     if (mIRHandler != null) {
                         if (!mIRHandler.isOpened()) {
                             CameraDialog.showDialog(Heyebrid3CActivity.this);
@@ -956,18 +956,18 @@ public class Heyebrid3CActivity extends BaseActivity implements CameraDialog.Cam
                 if (information[1] != null && information[1].equals("73BA28D0")) {
                     name = "Logitech Webcam C270";
                 }
-                if (viewID == R.id.camera_view_scene && (mSceneHandler != null) && !mSceneHandler.isOpened()) {
+                if (viewID == R.id.camera_view_scene_3c && (mSceneHandler != null) && !mSceneHandler.isOpened()) {
                     mSceneLabel.setText(name);
                     mSceneCamIndicator.setImageResource(R.drawable.ic_cam_on);
                     mSceneSwitch.setChecked(true);
                 }
-                if (viewID == R.id.camera_view_eye && (mCornealHandler != null) && !mCornealHandler.isOpened()) {
+                if (viewID == R.id.camera_view_eye_3c && (mCornealHandler != null) && !mCornealHandler.isOpened()) {
                     if (mIRSwitch.isChecked()) {
                         mEyeCamIndicator.setImageResource(R.drawable.ic_cam_on);
                     }
                     mCornealSwitch.setChecked(true);
                 }
-                if (viewID == R.id.camera_view_ir && (mIRHandler != null) && !mIRHandler.isOpened()) {
+                if (viewID == R.id.camera_view_ir_3c && (mIRHandler != null) && !mIRHandler.isOpened()) {
                     if (mCornealSwitch.isChecked()) {
                         mEyeCamIndicator.setImageResource(R.drawable.ic_cam_on);
                     }

@@ -3,41 +3,38 @@ src/main/jni/obj/local/armeabi-v7a/objs/heyebrid/eyetracker.o: \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdio.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__config \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ctime \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/android/support/include\time.h \
   src/main/jni\eyetracker.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string_view \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__string \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\algorithm \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\initializer_list \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstddef \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\type_traits \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstring \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string.h \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\utility \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__tuple \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdint \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__debug \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\memory \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\typeinfo \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\exception \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdlib \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdlib.h \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\new \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\limits \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\iterator \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\iosfwd \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\wchar.h \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__functional_base \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\tuple \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdexcept \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cassert \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\atomic \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstring \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdio \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cwchar \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cwctype \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cctype \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ctype.h \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\wctype.h \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\algorithm \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\initializer_list \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstddef \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\type_traits \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\utility \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__tuple \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\memory \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\typeinfo \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\exception \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdint \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\new \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__undef___deallocate \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\limits \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\iterator \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__functional_base \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__debug \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\tuple \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdexcept \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\atomic \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__undef_min_max \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/opencv.hpp \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/opencv_modules.hpp \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core.hpp \
@@ -47,6 +44,8 @@ src/main/jni/obj/local/armeabi-v7a/objs/heyebrid/eyetracker.o: \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/base.hpp \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\climits \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvstd.hpp \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdlib \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdlib.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cmath \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\math.h \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/ptr.inl.hpp \
@@ -57,6 +56,7 @@ src/main/jni/obj/local/armeabi-v7a/objs/heyebrid/eyetracker.o: \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/fast_math.hpp \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/types.hpp \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cfloat \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\float.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\vector \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__bit_reference \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__split_buffer \
@@ -80,11 +80,10 @@ src/main/jni/obj/local/armeabi-v7a/objs/heyebrid/eyetracker.o: \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\errno.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__threading_support \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\functional \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\locale.h \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/android/support/include\locale.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\streambuf \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\locale \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdarg \
-  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__bsd_locale_fallbacks.h \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\bitset \
   C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\istream \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/utility.hpp \
@@ -101,6 +100,7 @@ src/main/jni/obj/local/armeabi-v7a/objs/heyebrid/eyetracker.o: \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/calib3d/calib3d_c.h \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann.hpp \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann/flann_base.hpp \
+  C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cassert \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann/general.h \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann/matrix.h \
   C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann/params.h \
@@ -333,63 +333,19 @@ C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/l
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ctime:
 
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/android/support/include\time.h:
+
 src/main/jni\eyetracker.h:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string_view:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__string:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\algorithm:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\initializer_list:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstddef:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\type_traits:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstring:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string.h:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\utility:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__tuple:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdint:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__debug:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\memory:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\typeinfo:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\exception:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdlib:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdlib.h:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\new:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\limits:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\iterator:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\iosfwd:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\wchar.h:
 
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__functional_base:
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstring:
 
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\tuple:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdexcept:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cassert:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\atomic:
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\string.h:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdio:
 
@@ -401,7 +357,45 @@ C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/l
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\ctype.h:
 
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\wctype.h:
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\algorithm:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\initializer_list:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstddef:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\type_traits:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\utility:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__tuple:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\memory:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\typeinfo:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\exception:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdint:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\new:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__undef___deallocate:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\limits:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\iterator:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__functional_base:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__debug:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\tuple:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdexcept:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\atomic:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__undef_min_max:
 
 C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/opencv.hpp:
 
@@ -420,6 +414,10 @@ C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sd
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\climits:
 
 C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/cvstd.hpp:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdlib:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\stdlib.h:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cmath:
 
@@ -440,6 +438,8 @@ C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sd
 C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/core/types.hpp:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cfloat:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\float.h:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\vector:
 
@@ -487,15 +487,13 @@ C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/l
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\functional:
 
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\locale.h:
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/android/support/include\locale.h:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\streambuf:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\locale:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cstdarg:
-
-C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\__bsd_locale_fallbacks.h:
 
 C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\bitset:
 
@@ -528,6 +526,8 @@ C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sd
 C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann.hpp:
 
 C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann/flann_base.hpp:
+
+C:/Users/chla01/AppData/Local/Android/Sdk/ndk-bundle/build//../sources/cxx-stl/llvm-libc++/include\cassert:
 
 C:/Users/chla01/development/tools/opencv-3.2.0-android-sdk/OpenCV-android-sdk/sdk/native/jni/include\opencv2/flann/general.h:
 

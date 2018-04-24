@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\usbCameraCommon\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+        "outputFile": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\usbCameraCommon\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 103
                 },
                 "from": {
-                    "file": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\usbCameraCommon\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\usbCameraCommon\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 153
                 },
                 "from": {
-                    "file": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\usbCameraCommon\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\usbCameraCommon\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 203
                 },
                 "from": {
-                    "file": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\usbCameraCommon\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "file": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\usbCameraCommon\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

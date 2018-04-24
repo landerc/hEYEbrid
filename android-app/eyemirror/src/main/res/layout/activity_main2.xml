@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         app:el_duration="300"
-        app:el_expanded="true"
+        app:el_expanded="false"
         app:el_parallax="0.5">
 
         <ScrollView
@@ -377,7 +377,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimaryDark"
         app:el_duration="300"
-        app:el_expanded="false"
+        app:el_expanded="true"
         app:el_parallax="0.5">
 
         <ScrollView

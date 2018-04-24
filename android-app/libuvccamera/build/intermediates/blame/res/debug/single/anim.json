@@ -8,24 +8,8 @@
         "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\anim\\slide_in_left.xml"
     },
     {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_right.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\anim\\slide_out_right.xml"
-    },
-    {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_right.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\anim\\slide_in_right.xml"
-    },
-    {
         "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_right.xml",
         "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\anim\\slide_in_right.xml"
-    },
-    {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_left.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\anim\\slide_in_left.xml"
-    },
-    {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_left.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\exploded-aar\\com.serenegiant\\common\\1.1.9\\res\\anim\\slide_out_left.xml"
     },
     {
         "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_right.xml",

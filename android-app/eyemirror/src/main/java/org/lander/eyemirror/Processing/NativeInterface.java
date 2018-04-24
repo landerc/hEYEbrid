@@ -340,6 +340,7 @@ public class NativeInterface {
 
         float[] result = doPupilTracking(irRGBA != null ? irRGBA.getNativeObjAddr() : 0);
 
+        //TODO: here the callback is called with the result of the pupil tracking
         if (mCallback != null) {
             PupilPoint pp = new PupilPoint(new Point(result[7], result[8]), new Point(result[1], result[2]), result[5], new Point(result[3], result[4]), result[6], irTS, result[0]);
 

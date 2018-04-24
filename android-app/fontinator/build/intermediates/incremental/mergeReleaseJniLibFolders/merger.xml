@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\chla01\development\eyemirror\UVCCamera\fontinator\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="C:\Users\chla01\development\eyemirror\UVCCamera\fontinator\src\release\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\chla01\development\heyebrid-public\hEYEbrid\android-app\fontinator\src\main\jniLibs"/></dataSet><dataSet config="release"><source path="C:\Users\chla01\development\heyebrid-public\hEYEbrid\android-app\fontinator\src\release\jniLibs"/></dataSet></merger>

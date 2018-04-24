@@ -501,6 +501,7 @@ public abstract class AbstractUVCCameraHandler extends Handler {
 					mUVCCamera.setPreviewSize(mWidth, mHeight, UVCCamera.DEFAULT_PREVIEW_MODE, mBandwidthFactor);
 				} catch (final IllegalArgumentException e1) {
 					callOnError(e1);
+					if (DEBUG) Log.v(TAG_THREAD, "handleStartPreview:ERROR!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 					return;
 				}
 			}

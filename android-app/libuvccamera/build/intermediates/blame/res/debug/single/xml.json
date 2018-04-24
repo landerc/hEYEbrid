@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
-        "source": "C:\\Users\\chla01\\development\\eyemirror\\UVCCamera\\libuvccamera\\src\\main\\res\\xml\\device_filter.xml"
-    },
-    {
         "merged": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\build\\intermediates\\res\\merged\\debug\\xml\\device_filter.xml",
         "source": "C:\\Users\\chla01\\development\\heyebrid-public\\hEYEbrid\\android-app\\libuvccamera\\src\\main\\res\\xml\\device_filter.xml"
     }

@@ -633,31 +633,17 @@ public class HeyebridActivity extends BaseActivity implements CameraDialog.Camer
 
     protected void onStart() {
         super.onStart();
-
-        /*
-        if (mCornealCameraView != null) {
-            mCornealCameraView.onResume();
-        }
-        if (mEyeCameraViewIR != null) {
-            mEyeCameraViewIR.onResume();
-        }*/
     }
 
     @Override
     protected void onStop() {
-        /*
-        if (mCornealCameraView != null) {
-            mCornealCameraView.onPause();
-        }
-        if (mEyeCameraViewIR != null) {
-            mEyeCameraViewIR.onPause();
-        }*/
         super.onStop();
     }
 
     @Override
     protected void onDestroy() {
         mRecordingHelper.close(mFrameCounter);
+        mNativeInterface.stopNativeThread();
         if (mCornealHandler != null) {
             mCornealHandler.close();
             mCornealHandler = null;
@@ -675,7 +661,6 @@ public class HeyebridActivity extends BaseActivity implements CameraDialog.Camer
             mUSBMonitor.destroy();
             mUSBMonitor = null;
         }
-        mNativeInterface.stopNativeThread();
 
         super.onDestroy();
     }
