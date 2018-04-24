@@ -23,6 +23,9 @@ The basic application is licensed unde rthe Apache License, Version 2.0. IMPORTA
 
 * ELse for eye tracking (http://www.ti.uni-tuebingen.de/uploads/tx_timitarbeiter/ElSe.pdf)
 
+## Usage
+Build the software using Android Studio, latest version. IMPORTANT: Remove the current NDK and replace it by NDK 14b!
+
 ## Hardware
 The head-mounted device is based on Pupil Lab's eye tracking device. We used the glasses frame and removed the cameras.
 We printed our own camera enclosure to mount two cameras in front of the eye. The model can be found in the folder hardware. We printed the mount using a FormLabs 3D pribnter.
